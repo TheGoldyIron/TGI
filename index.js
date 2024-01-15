@@ -49,7 +49,7 @@ client.on("ready", () => {
                 type: "PLAYING"
             }
         ],
-        status: "busy"
+        status: "dnd"
     })
 
     try {
