@@ -4,6 +4,8 @@ module.exports = {
     name: "test",
     description: "Test command",
     category: "owner",
+    ownerID: ["303956449011171329", "223832182261547008"],
+    permissions: ["ADMINISTRATOR"],
     options: [
         {
             name: "test",
