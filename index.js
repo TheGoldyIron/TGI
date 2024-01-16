@@ -33,7 +33,6 @@ for (const folder of commandFolders) {
 for (const e of eventFolders) {
     const eventFiles = fs.readdirSync(`./events/${e}`).filter(f => f.endsWith(".js"));
 
-<<<<<<< HEAD
     for (const file of eventFiles) {
         const event = require(`./events/${e}/${file}`);
         if (event.once) {
@@ -41,17 +40,6 @@ for (const e of eventFolders) {
         } else {
             client.on(event.name, (...args) => event.execute(...args, client));
         }
-=======
-    client.user.setPresence({
-        activities: [
-            {
-                name: "TGI",
-                type: "PLAYING"
-            }
-        ],
-        status: "dnd"
-    })
->>>>>>> 59aa512fa3d3b0ce84c7c930a66a6a17981b1eee
 
         console.log(`Loaded event ${event.name}.js`);
     }
