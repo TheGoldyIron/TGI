@@ -22,7 +22,7 @@ module.exports = {
         try {
 
             // Connect to the database
-            connectDB();
+            //connectDB();
 
             // REMOVE THIS IF ONLY ONE GUILD/SERVER
             const guilds = client.guilds.cache;
