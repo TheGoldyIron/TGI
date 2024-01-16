@@ -24,8 +24,8 @@ function connectDB() {
             }
 
             console.log("Connected to database!");
-        }
-     } catch (e) {
+        });
+    } catch (e) {
         console.error(e);
     };
 };
