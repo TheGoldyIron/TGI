@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const { connectDB } = require("../../utils/database/databaseHandler.js");
+//const { connectDB } = require("../../utils/database/databaseHandler.js");
 
 module.exports = {
     name: "ready",
