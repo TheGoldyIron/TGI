@@ -1,5 +1,7 @@
 const Discord = require("discord.js");
 
+const { connectDB } = require("../../utils/database/databaseHandler.js");
+
 module.exports = {
     name: "ready",
     once: true,
@@ -18,6 +20,10 @@ module.exports = {
         })
 
         try {
+
+            // Connect to the database
+            connectDB();
+
             // REMOVE THIS IF ONLY ONE GUILD/SERVER
             const guilds = client.guilds.cache;
             guilds.forEach(async guild => {

@@ -1,17 +1,15 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 
-// Test123
-
 const client = new Discord.Client({
     intents: [
         Discord.GatewayIntentBits.MessageContent,
         Discord.GatewayIntentBits.Guilds,
         Discord.GatewayIntentBits.GuildMessages,
         Discord.GatewayIntentBits.GuildMessageReactions,
-        Discord.GatewayIntentBits.GuildMembers
-        //Discord.GatewayIntentBits.GuildVoiceStates        // Activate this if music
-        //Discord.GatewayIntentBits.GuildPresences          // Active this if presences should be used and/or collected
+        Discord.GatewayIntentBits.GuildMembers,
+        // Discord.GatewayIntentBits.GuildVoiceStates        // Activate this if music
+        Discord.GatewayIntentBits.GuildPresences
     ],
 });
 
